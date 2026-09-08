@@ -15,7 +15,7 @@ export default function Footer() {
                 sundasr621@gmail.com
               </a>
             </div>
-            <p className="site-footer__tagline">MERN SACK DEVELOPER</p>
+            <p className="site-footer__tagline">MERN STACK DEVELOPER</p>
           </div>
 
           <div className="site-footer__media">

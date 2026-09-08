@@ -35,7 +35,7 @@ export default function Hero({ imageSrc = '/image.png', imageAlt = 'Sundas Razza
           <div className="hero__ring hero__ring--outer" aria-hidden="true" />
           <div className="hero__ring hero__ring--inner" aria-hidden="true" />
           <div className="hero__photo"> {imageSrc ? (<img src={imageSrc} alt={imageAlt} />) :
-            (<div className="hero__photo-placeholder">Add your photo here</div>)} </div>
+            (<div className="hero__photo-placeholder"></div>)} </div>
           <Dots size={72} className="hero__dots" />
         </div>
       </div>
