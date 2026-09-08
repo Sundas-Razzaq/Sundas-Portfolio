@@ -1,0 +1,20 @@
+.page-intro {
+  padding: 56px 0 24px;
+}
+
+.page-intro__crumb {
+  display: flex;
+  gap: 8px;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.page-intro__slash {
+  color: var(--color-primary);
+}
+
+.page-intro__subtitle {
+  color: var(--color-gray);
+}

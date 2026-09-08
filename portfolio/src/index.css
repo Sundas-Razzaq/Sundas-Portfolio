@@ -1,0 +1,161 @@
+:root,
+[data-theme='dark'] {
+  --color-bg: #282c33;
+  --color-bg-soft: #2f333c;
+  --color-gray: #abb2bf;
+  --color-white: #ffffff;
+  --color-primary: #c778dd;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+
+  --container-width: 1024px;
+  --gutter: 24px;
+
+  --header-height: 88px;
+}
+
+[data-theme='light'] {
+  --color-bg: #f5f5f7;
+  --color-bg-soft: #e9e9ee;
+  --color-gray: #5b6270;
+  --color-white: #14161a;
+  --color-primary: #a232c9;
+}
+
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-gray);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  position: relative;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 64px 0;
+  }
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.section-heading h2 {
+  display: flex;
+  gap: 4px;
+  font-size: 32px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.section-heading h2 .hash {
+  color: var(--color-primary);
+}
+
+.section-heading h2 .text {
+  color: var(--color-white);
+}
+
+.section-heading .line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gray);
+  opacity: 0.4;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--color-gray);
+  background: transparent;
+  color: var(--color-white);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background: rgba(199, 120, 221, 0.1);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-white);
+}
+
+@media (max-width: 900px) {
+  :root {
+    --gutter: 20px;
+  }
+}

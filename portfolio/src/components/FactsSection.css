@@ -1,0 +1,23 @@
+.facts-section__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 605px;
+}
+
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed rgba(171, 178, 191, 0.4);
+}
+
+.fact-row__label {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.fact-row__value {
+  color: var(--color-gray);
+}
