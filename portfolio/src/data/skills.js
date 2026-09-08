@@ -5,7 +5,7 @@ const skills = [
   },
   {
     category: 'Frontend',
-    items: ['React.js', 'React Router', 'Axios', 'Framer Motion'],
+    items: ['React.js', 'React Router', 'Axios', 'Bootstrap', 'Vite', 'Material UI', "JavaScript ES6+"],
   },
   {
     category: 'Backend',
@@ -13,19 +13,15 @@ const skills = [
   },
   {
     category: 'Database',
-    items: ['MongoDB', 'MongoDB Atlas'],
+    items: ['MongoDB', 'MongoDB Atlas', 'Mongoose', 'PostgreSQL', 'SQLite'],
   },
   {
     category: 'APIs & Authentication',
     items: ['REST APIs', 'JWT', 'bcrypt'],
   },
   {
-    category: 'Cloud & Storage',
-    items: ['Cloudinary', 'Multer'],
-  },
-  {
     category: 'Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Figma'],
+    items: ['Git', 'GitHub', 'VS Code', 'Figma', 'Postman'],
   },
 ];
 

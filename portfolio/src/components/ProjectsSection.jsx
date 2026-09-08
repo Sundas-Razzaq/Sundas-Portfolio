@@ -51,10 +51,10 @@ export default function ProjectsSection({
               </button>
               <button
                 type="button"
-                className={`projects-tab${activeCategory === 'backend' ? ' projects-tab--active' : ''}`}
-                onClick={() => handleTabClick('backend')}
+                className={`projects-tab${activeCategory === 'Full Stack' ? ' projects-tab--active' : ''}`}
+                onClick={() => handleTabClick('Full Stack')}
               >
-                Backend projects
+                Full Stack projects
               </button>
             </>
           ) : (
@@ -62,8 +62,8 @@ export default function ProjectsSection({
               <Link to="/works?category=frontend" className="projects-tab">
                 Frontend projects
               </Link>
-              <Link to="/works?category=backend" className="projects-tab">
-                Backend projects
+              <Link to="/works?category=Full Stack" className="projects-tab">
+                Full Stack projects
               </Link>
             </>
           )}

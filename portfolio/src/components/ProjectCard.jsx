@@ -1,7 +1,7 @@
 import './ProjectCard.css';
 
 export default function ProjectCard({ project }) {
-  const { title, description, tags = [], image, liveUrl, cachedUrl } = project;
+  const { title, description, tags = [], image, liveUrl, codeUrl } = project;
 
   return (
     <article className="project-card">
@@ -30,9 +30,9 @@ export default function ProjectCard({ project }) {
               Live {'<~>'}
             </a>
           )}
-          {cachedUrl && (
-            <a href={cachedUrl} target="_blank" rel="noreferrer" className="btn btn-secondary project-card__btn">
-              Cached {'>='}
+          {codeUrl && (
+            <a href={codeUrl} target="_blank" rel="noreferrer" className="btn btn-secondary project-card__btn">
+              Code {'>='}
             </a>
           )}
         </div>

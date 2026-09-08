@@ -10,12 +10,12 @@ export default function Footer() {
           <div className="site-footer__brand-block">
             <div className="site-footer__brand">
               <Logo size={16} />
-              <span>Elias</span>
-              <a href="mailto:elias@elias-dev.ml" className="site-footer__email">
-                elias@elias-dev.ml
+              <span>Sundas Razzaq</span>
+              <a href="mailto:sundasr621@gmail.com" className="site-footer__email">
+                sundasr621@gmail.com
               </a>
             </div>
-            <p className="site-footer__tagline">Web designer and front-end developer</p>
+            <p className="site-footer__tagline">MERN SACK DEVELOPER</p>
           </div>
 
           <div className="site-footer__media">
@@ -27,8 +27,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        <p className="site-footer__copy">© Copyright {new Date().getFullYear()}. Made by Elias</p>
       </div>
     </footer>
   );
